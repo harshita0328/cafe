@@ -1,0 +1,224 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+  
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:67px;
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+/* navigation: bar logo */
+#logo{
+    margin: 3px 6px;
+}
+
+/* navigation: bar logo and image */
+#logo img{
+    height: 50px;
+    /* width: 60px;
+    margin: 2px 4px; */
+    margin: 20px 30px;
+}
+
+/* navigation: list styling*/
+ul
+{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbar ul li a{
+   color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 30px;
+    display: block;
+    
+}
+#navbar ul li a:hover{
+    background-color: #fff;
+    color: black;
+     padding: 10px 25px;
+     text-decoration: none;
+     border-radius: 30px;
+     display: block;
+     
+ }
+/* navbar css end   */
+
+/* section home css begin */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 22px;
+
+}
+#home::before{
+    content: "";
+    background:url('img//food-1932466_640.jpg') center center/cover no-repeat;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.90;
+    top: 0;
+}
+/* Services section */
+#services{
+    display: flex;
+    margin: 12px;
+}
+#services .box{
+    border: 2px solid red;
+    margin: 3px 5px;
+    padding: 13px;
+    border-radius: 23px;
+    background-color: rgb(247, 247, 247);
+}
+#services .box img
+{
+    height: 180px;
+    display: block;
+    margin: auto;
+}
+.services-container{
+    margin: 20px;
+    padding: 20px 10px;
+}
+
+
+/* client section */
+#client-section{
+    height: 220px;
+}
+#client-section::before{
+   content: "";
+   position: absolute;
+   background: url('img//salad-2756467_640.jpg');
+   width: 100%;
+   height: 30%;
+   z-index: -1;
+   opacity: 0.4;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client img{
+    height: 114px;
+}
+.client-item{
+    margin: 5px 6px;
+    padding: 5px 6px;
+    border-radius: 2px;
+    border: 2px solid goldenrod;
+}
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 23px;
+    font-family: 'Barlow', sans-serif;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('img//phone-292994_1920.jpg');
+}
+#contact-box input, #contact-box textarea {
+    width: 100%;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 1.3rem;
+  
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box-label{
+    font-size: 1.3rem;
+}
+/* footer */
+footer{
+    background-color: black;
+    color: rgb(241, 234, 234);
+    padding: 4px 15px;
+}
+/* utility classes */
+.heading-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+#home h1{
+   color: white;
+   text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+ }
+ .btn{
+     padding: 6px 20px;
+     border: 2px solid white;
+     background-color: brown;
+     color: cornsilk;
+     margin: 28px;
+     font-size: 1.5rem;
+     border-radius: 15px;
+     cursor: pointer;
+ }
+ .center{
+     text-align: center;
+ }
